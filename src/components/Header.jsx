@@ -17,10 +17,10 @@ const Header = () => {
           url: "/#AboutME",
         },
         {
-          title: "Contact",
-          label: "contact",
-          url: "mailto:miduga@gmail.com",
-        },
+          title: "Resume",
+          label: "Resume",
+          url: "/resume/Resume.pdf",
+        }
       ];
       
       const [activeSection, setActiveSection] = useState("");
@@ -68,7 +68,7 @@ const Header = () => {
           <a
             key={link.label}
             onClick={(e) => {
-              e.preventDefault();
+              link.label !== "Resume" && e.preventDefault();
               handleNavClick(link.label);
             }}
             className={`relative block px-2 py-2 transition text-base ${

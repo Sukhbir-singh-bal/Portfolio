@@ -9,12 +9,13 @@ import GithubIco from "./assets/icons/github.svg"
 import EmailIco from "./assets/icons/email.svg"
 function App() {
   return (
-    <Layout >
+    <Layout>
       <main className="px-4">
         <section className="section container mx-auto w-full scroll-m-20 py-16 md:max-w-2xl md:py-36 lg:max-w-4xl flex-col-reverse flex md:flex-row  align-middle justify-between">
             <div className="max-w-xl">
               <h1 className="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white">Hey, I'm Sukhbir Singh</h1>
-              <p className="dark:[&amp;>strong]:text-yellow-200 [&amp;>strong]:text-blue-500 [&amp;>strong]:font-semibold mt-6 text-xl text-gray-800 dark:text-gray-300">With 2+ years in the game, I'm a web wizard skilled in <strong className="text-purple-400">PHP</strong>, <strong className="text-red-400">Laravel</strong>, <strong className="text-blue-300">React</strong>, and <strong className="text-yellow-400">JavaScript</strong>.Whether it's rebuilding websites or integrating third-party tools, I make web magic happen, boosting site management and functionality.</p>
+              <p className="dark:[&amp;>strong]:text-yellow-200 [&amp;>strong]:text-blue-500 [&amp;>strong]:font-semibold mt-6 text-xl text-gray-800 dark:text-gray-300">
+              With over 2 years of experience, I'm a seasoned web developer proficient in<strong className="text-purple-400">PHP</strong>, <strong className="text-red-400">Laravel</strong>, <strong className="text-blue-300">React</strong>, and <strong className="text-yellow-400">JavaScript</strong>. From revamping websites to integrating third-party tools, I specialize in enhancing site management and functionality, delivering seamless and powerful web solutions.</p>
               <nav className="mt-8 flex flex-wrap gap-4">
                 <NavPill herf="mailto:sukhbirsingh4259@gmail.com" text="Contact me"  Icon={EmailIco}/>
                 <NavPill herf="https://linkedin.com/in/midudev" text="LinkedIN"  Icon={LinkedInIco}/>
@@ -54,7 +55,7 @@ function App() {
                 </div>
               </div>
               <div className="relative flex flex-col gap-2 pb-4 text-gray-600 md:col-span-3 dark:text-gray-300">
-              During my tenure at CIIRS company, I collaborated with a dynamic team tasked with the development and upkeep of a robust ecommerce platform. My role primarily involved spearheading the implementation of new features and functionalities, alongside adeptly troubleshooting and resolving any encountered bugs.
+              At CIIRS, I worked with a dynamic team to develop and maintain a robust ecommerce platform. My responsibilities included leading the implementation of new features and functionalities, as well as expertly troubleshooting and resolving bugs to ensure optimal performance.
                 <a href="https://www.ciirs.com" role="link" className="inline-flex items-center text-lg font-medium text-blue-500 hover:text-yellow-700 dark:text-yellow-200 dark:hover:text-yellow-300">
                   See More
                   <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-chevron-right w-5" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -75,13 +76,12 @@ function App() {
                   <time className="m-0 p-0 text-sm text-gray-600/80 dark:text-white/80">August 2021 - January 2022</time>
                 </div>
               </div>
-              <div className="relative flex flex-col gap-2 pb-4 text-gray-600 md:col-span-3 dark:text-gray-300">I completed a 6-month Android Development training program  where I sharpened my skills in Java and the Android Studio  platform. During the program, I created a restaurant management  system using Java and MySQL, allowing users to add custom dishes, generate bill receipts, track recent sales, and view the  top-selling items. I also developed an earthquake report app using the USGS API in 
-              Android, providing users with a list of the latest earthquakes.</div>
+              <div className="relative flex flex-col gap-2 pb-4 text-gray-600 md:col-span-3 dark:text-gray-300">I completed a 6-month Android Development training program, honing my skills in Java and Android Studio. Additionally, I developed an earthquake report app utilizing the USGS API, which provides users with real-time updates on the latest earthquakes.</div>
             </div>
           </li>
         </ol>
       </section>
-      <section id="Projects" data-section="Projects" className="section undefined container mx-auto w-full scroll-m-20 md:max-w-2xl lg:max-w-4xl">
+      <section id="Projects" data-section="Projects" className="section undefined container mt-10 mx-auto w-full scroll-m-20 md:max-w-2xl lg:max-w-4xl">
         <h2 className="mb-6 flex items-center gap-x-3 text-3xl font-semibold text-black/80 dark:text-white">
           <svg className="size-7" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -92,10 +92,10 @@ function App() {
           Projects
         </h2>
         <div className="flex flex-col gap-y-16">
-          <ProjectView Description={"This project is a YouTube video downloader that allows you to download videos without the need for any API or third-party tools. It is built using PHP and utilizes a decrypt function to encrypted videos."} GitLink={"https://github.com/Sukhbir-singh-bal/Youtube-Downloader"} WebLink={"https://ssbyoutube.000webhostapp.com/"} title={"YouTube Downloader"} techStack={["PHP,Javascript,HTML"]} ImgSrc={YtDownloader} />
+          <ProjectView Description={"This project is a YouTube video downloader that allows you to download videos without the need for any API or third-party tools. It is built using PHP and utilizes a decrypt function to encrypted videos."} GitLink={"https://github.com/Sukhbir-singh-bal/Youtube-Downloader"} WebLink={"https://ssbyoutube.000webhostapp.com/"} title={"YouTube Downloader"} techStack={["PHP","Javascript","HTML"]} ImgSrc={YtDownloader} />
         </div>
       </section>
-        <section id="AboutME" data-section="AboutME" className="section undefined container mx-auto w-full scroll-m-20 md:max-w-2xl lg:max-w-4xl">
+        <section id="AboutME" data-section="AboutME" className="section undefined container mx-auto w-full scroll-m-20 md:max-w-2xl mt-10 lg:max-w-4xl">
           <h2 className="mb-6 flex items-center gap-x-8 text-3xl font-semibold text-black/80 dark:text-white">
             <svg className="size-8" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -103,7 +103,7 @@ function App() {
               <path d="M6 21v-2a4 4 0 0 1 4 -4h4"></path>
               <path d="M15 19l2 2l4 -4"></path>
             </svg>
-            Sobre mí
+             About me
           </h2>
           <article className="flex flex-col items-center justify-center gap-8 text-gray-700 md:flex-row dark:text-gray-300">
             <div className="[&amp;>p]:mb-4 [&amp;>p>strong]:text-blue-500 dark:[&amp;>p>strong]:text-yellow-100 [&amp;>p>strong]:font-normal [&amp;>p>strong]:font-mono order-2 text-pretty md:order-1">
@@ -113,7 +113,7 @@ function App() {
             </p>
 
             </div>
-            <img width="200" height="200" src={reactLogo} alt="Miguel Ángel" className="order-1 aspect-square h-full w-64 rotate-3 rounded-2xl bg-black/20 object-cover p-1 ring-1 ring-black/70 md:order-2 lg:w-64 lg:p-2 dark:bg-yellow-500/5 dark:ring-white/20"/>
+            <img width="200" height="200" src={ProfileImage} alt="Sukhbir" className="order-1 aspect-square h-40 w-40 rotate-3 rounded-2xl bg-black/20 object-cover p-1 ring-1 ring-black/70 md:order-2 lg:w-64 lg:p-2 dark:bg-yellow-500/5 dark:ring-white/20"/>
           </article>
         </section>
       </main>

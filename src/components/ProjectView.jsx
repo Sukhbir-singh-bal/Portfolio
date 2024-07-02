@@ -2,7 +2,7 @@ export default function ProjectView({title,Description,techStack,ImgSrc,GitLink,
     return (
         <article className="group flex flex-col space-x-0 space-y-8 md:flex-row md:space-x-8 md:space-y-0">
             <div className="w-full md:w-1/2">
-              <div className="relative col-span-6 row-span-5 flex transform flex-col items-center gap-8 overflow-clip rounded-xl shadow-xl transition duration-500 ease-in-out sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50"><img alt="Recién llegado vs 5 años en Nueva Zelanda" className="h-56 w-full object-cover object-top transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" loading="lazy" src={ImgSrc} /></div>
+              <div className="relative col-span-6 row-span-5 flex transform flex-col items-center gap-8 overflow-clip rounded-xl shadow-xl transition duration-500 ease-in-out sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50"><img alt={title} className="h-48 w-full object-cover object-top transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105" src={ImgSrc} /></div>
             </div>
             <div className="w-full md:w-1/2 md:max-w-lg">
               <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">{title}</h3>
@@ -11,7 +11,7 @@ export default function ProjectView({title,Description,techStack,ImgSrc,GitLink,
                     {techStack &&
                         techStack.map((item,index)=>(
                             <li key={index}>
-                                <span className="flex gap-x-2 rounded-full bg-black px-2 py-1 text-xs text-white">
+                                <span className="flex gap-x-2 rounded-full font-bold bg-black px-2 py-1 text-xs text-white">
                                 {item}
                                 </span>
                             </li>

@@ -2,13 +2,13 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Helmet } from 'react-helmet';
-
-const Layout = ({ title, description, children }) => {
+const Layout = ({ title, description, children , favicon }) => {
   return (
       <div className="relative text-black dark:text-white">
         <Helmet>
             <title>{title}</title>
             <meta name="description" content={description} />
+            <link rel="shortcut icon" href={favicon} type="image/x-icon" />
         </Helmet>
         <div
           className="
