@@ -18,7 +18,7 @@ function App() {
               With over 2 years of experience, I'm a seasoned web developer proficient in<strong className="text-purple-400">PHP</strong>, <strong className="text-red-400">Laravel</strong>, <strong className="text-blue-300">React</strong>, and <strong className="text-yellow-400">JavaScript</strong>. From revamping websites to integrating third-party tools, I specialize in enhancing site management and functionality, delivering seamless and powerful web solutions.</p>
               <nav className="mt-8 flex flex-wrap gap-4">
                 <NavPill herf="mailto:sukhbirsingh4259@gmail.com" text="Contact me"  Icon={EmailIco}/>
-                <NavPill herf="https://linkedin.com/in/midudev" text="LinkedIN"  Icon={LinkedInIco}/>
+                <NavPill herf="https://linkedin.com/in/sukhbir-singh-bal" text="LinkedIN"  Icon={LinkedInIco}/>
                 <NavPill herf="https://github.com/sukhbir-singh-bal" text="Git Hub" Icon={GithubIco} />
                 <a href="https://linkedin.com/in/sukhbir-singh-bal" target="_blank" rel="noopener" className="flex items-center transition md:justify-center md:hover:scale-105">
                   <div className="flex items-center">
