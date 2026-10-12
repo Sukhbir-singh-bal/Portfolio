@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /build/
+Disallow: /image/
+
+Sitemap: https://sukhbirsinghbal.com/sitemap.xml

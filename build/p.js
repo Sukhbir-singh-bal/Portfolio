@@ -232,7 +232,10 @@
         });
       });
   }
-  var mocks={a:mockA,b:mockB,c:mockC,d:mockD,e:mockE};
+  function mockShot(c){
+    return gsap.timeline({paused:true}).from($('.shot',c),{y:30,scale:.96,opacity:0,duration:.9,ease:'power3.out'});
+  }
+  var mocks={a:mockA,b:mockB,c:mockC,d:mockD,e:mockE,shot:mockShot};
   var cards=$$('.card');
   cards.forEach(function(c){
     var fn=mocks[c.getAttribute('data-mock')];

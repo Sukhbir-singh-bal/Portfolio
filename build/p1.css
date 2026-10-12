@@ -54,6 +54,8 @@ section[id]{scroll-margin-top:84px}
 .r3{inset:-10%;border-color:rgba(255,255,255,.1)}
 .chip{position:absolute;width:clamp(36px,5.2vw,52px);aspect-ratio:1;margin:calc(clamp(36px,5.2vw,52px) / -2);left:calc(50% + 50% * sin(var(--a)));top:calc(50% - 50% * cos(var(--a)));display:grid;place-items:center;border-radius:50%;background:var(--ink-2);border:1px solid rgba(255,255,255,.16);color:#fff;box-shadow:0 8px 24px rgba(0,0,0,.35)}
 .chip .ic{width:48%;height:48%}
+.chip{pointer-events:auto;transition:color .35s,border-color .35s,box-shadow .35s}
+.chip:hover{color:var(--bc,#fff);border-color:var(--bc,#fff);box-shadow:0 8px 24px rgba(0,0,0,.35),0 0 22px -2px var(--bc,transparent)}
 .hero-copy{position:relative;z-index:2;padding-bottom:36px;display:flex;flex-direction:column;gap:clamp(20px,2.4vw,30px)}
 .hello{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0;color:#E6E8EB}
 .avail{display:inline-flex;align-items:center;gap:9px;padding:7px 13px 7px 11px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);font:500 .76rem/1 var(--mono)}
@@ -61,8 +63,12 @@ section[id]{scroll-margin-top:84px}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(43,213,118,.55)}70%{box-shadow:0 0 0 9px rgba(43,213,118,0)}100%{box-shadow:0 0 0 0 rgba(43,213,118,0)}}
 h1{margin:0;font:900 clamp(3.8rem,11.5vw,9.5rem)/.86 var(--display);text-transform:uppercase;letter-spacing:-.01em}
 h1 .line{display:block;overflow:hidden;padding-bottom:.04em}
-h1 .line > span{display:inline-block}
-h1 .dim{color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.9)}
+h1 .line > span{display:inline-block;color:transparent;-webkit-text-stroke:1.5px rgba(255,255,255,.9)}
+h1 .ch,.big .ch{background:linear-gradient(#fff,#fff) left/100% 100% no-repeat;-webkit-background-clip:text;background-clip:text;transition:background-size .4s cubic-bezier(.65,0,.35,1)}
+h1 .ch:hover,.big .ch:hover{background-size:0% 100%}
+h1 .dim .ch,.big .dim .ch{background-size:0% 100%}
+h1 .dim .ch:hover,.big .dim .ch:hover{background-size:100% 100%}
+@media (prefers-reduced-motion:reduce){h1 .ch,.big .ch{transition:none}}
 .hero-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,440px);gap:24px 48px;align-items:start;margin:0}
 .hero-row p{margin:0;color:#C8CCD2;font-size:clamp(1rem,1.5vw,1.12rem);max-width:46ch}
 .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}

@@ -99,7 +99,32 @@ for k,n in sorted(used):
 body=re.sub(r'\{\{(si|lu):([a-z0-9\-]+)\}\}',lambda m:'<svg class="ic %s" aria-hidden="true" focusable="false"><use href="#%s-%s"/></svg>'%(m.group(1),m.group(1),m.group(2)),body)
 assert '{{' not in body
 sprite='<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">'+''.join(sym)+'</svg>'
-head='''<title>Sukhbir Singh</title>
+head='''<title>Sukhbir Singh Bal | PHP &amp; Laravel Web Developer in Punjab, India</title>
+<meta name="description" content="Sukhbir Singh Bal, freelance PHP &amp; Laravel web developer in Punjab, India. 4+ years building APIs, payments, dashboards and AI features for clients worldwide.">
+<meta name="author" content="Sukhbir Singh Bal">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://sukhbirsinghbal.com/">
+<meta name="theme-color" content="#0C0D0F">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/assets/icon-512.png" type="image/png" sizes="512x512">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Sukhbir Singh Bal">
+<meta property="og:title" content="Sukhbir Singh Bal | PHP &amp; Laravel Web Developer in Punjab, India">
+<meta property="og:description" content="Sukhbir Singh Bal, freelance PHP &amp; Laravel web developer in Punjab, India. 4+ years building APIs, payments, dashboards and AI features for clients worldwide.">
+<meta property="og:url" content="https://sukhbirsinghbal.com/">
+<meta property="og:image" content="https://sukhbirsinghbal.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sukhbir Singh Bal, PHP and Laravel web developer in Punjab, India">
+<meta property="og:locale" content="en_IN">
+<meta property="profile:first_name" content="Sukhbir Singh">
+<meta property="profile:last_name" content="Bal">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Sukhbir Singh Bal | PHP &amp; Laravel Web Developer in Punjab, India">
+<meta name="twitter:description" content="Sukhbir Singh Bal, freelance PHP &amp; Laravel web developer in Punjab, India. 4+ years building APIs, payments, dashboards and AI features for clients worldwide.">
+<meta name="twitter:image" content="https://sukhbirsinghbal.com/assets/og-image.jpg">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://sukhbirsinghbal.com/#person","name":"Sukhbir Singh Bal","alternateName":"Sukhbir Singh","jobTitle":"PHP & Laravel Web Developer","description":"Sukhbir Singh Bal, freelance PHP & Laravel web developer in Punjab, India. 4+ years building APIs, payments, dashboards and AI features for clients worldwide.","url":"https://sukhbirsinghbal.com/","image":"https://sukhbirsinghbal.com/assets/og-image.jpg","email":"mailto:sukhbirsingh4259@gmail.com","address":{"@type":"PostalAddress","addressRegion":"Punjab","addressCountry":"IN"},"nationality":{"@type":"Country","name":"India"},"knowsAbout":["PHP","Laravel","MySQL","REST APIs","Payment integration","Stripe","PayPal","Vue.js","Shopify","WordPress","Supabase","AI integration"],"sameAs":["https://www.upwork.com/freelancers/sukhbirsinghbal","https://github.com/Sukhbir-singh-bal","https://www.linkedin.com/in/sukhbir-singh-bal"]},{"@type":"ProfessionalService","@id":"https://sukhbirsinghbal.com/#service","name":"Sukhbir Singh Bal, Web Development","url":"https://sukhbirsinghbal.com/","image":"https://sukhbirsinghbal.com/assets/og-image.jpg","description":"Sukhbir Singh Bal, freelance PHP & Laravel web developer in Punjab, India. 4+ years building APIs, payments, dashboards and AI features for clients worldwide.","founder":{"@id":"https://sukhbirsinghbal.com/#person"},"email":"sukhbirsingh4259@gmail.com","address":{"@type":"PostalAddress","addressRegion":"Punjab","addressCountry":"IN"},"areaServed":[{"@type":"State","name":"Punjab"},{"@type":"Country","name":"India"},{"@type":"Place","name":"Worldwide"}],"serviceType":["Web development","PHP development","Laravel development","API development","Payment integration","Dashboard and admin panel development","AI feature development"],"sameAs":["https://www.upwork.com/freelancers/sukhbirsinghbal","https://github.com/Sukhbir-singh-bal","https://www.linkedin.com/in/sukhbir-singh-bal"]},{"@type":"WebSite","@id":"https://sukhbirsinghbal.com/#website","url":"https://sukhbirsinghbal.com/","name":"Sukhbir Singh Bal","inLanguage":"en","publisher":{"@id":"https://sukhbirsinghbal.com/#person"}}]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
